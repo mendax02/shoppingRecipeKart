@@ -2,8 +2,10 @@
 
 <div class="container pull-left">
   <div class="row">
-    <div class="div col-md-12">
-      <app-recipes *ngIf="loadedFeature === 'recipe'"></app-recipes>
+    <div class="div col-md-12" >
+      <app-recipes *ngIf="loadedFeature === 'recipe'"
+      [ngClass]= "'temp'"
+      ></app-recipes>
       <app-shopping-list *ngIf="loadedFeature !=='recipe'"></app-shopping-list>
     </div>
   </div>
